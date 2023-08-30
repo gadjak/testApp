@@ -1,0 +1,7 @@
+@import '@/styles/mixins.scss';
+.root{
+    min-width: 230px;
+    .button{
+        width: 100%;
+    }
+}
