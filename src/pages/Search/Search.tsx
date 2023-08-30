@@ -59,27 +59,29 @@ export const Search = () => {
   );
 
   return (
-    <Form
-      onFieldsChange={handleFieldChange}
-      form={form}
-      onFinish={onFinish}
-      layout="vertical"
-      className={styles.root}
-    >
-      <Item label="Назва" name="name">
-        <Input placeholder="Введіть назву" />
-      </Item>
-      <Selectors />
-      <Item>
-        <Button
-          type="primary"
-          htmlType="submit"
-          disabled={disabled}
-          className={styles.button}
-        >
-          Пошук
-        </Button>
-      </Item>
-    </Form>
+    <div className={styles.root}>
+      <Form
+        onFieldsChange={handleFieldChange}
+        form={form}
+        onFinish={onFinish}
+        layout="vertical"
+        className={styles.form}
+      >
+        <Item label="Назва" name="name">
+          <Input placeholder="Введіть назву" />
+        </Item>
+        <Selectors />
+        <Item>
+          <Button
+            type="primary"
+            htmlType="submit"
+            disabled={disabled}
+            className={styles.button}
+          >
+            Пошук
+          </Button>
+        </Item>
+      </Form>
+    </div>
   );
 };

@@ -1,7 +1,13 @@
 @import '@/styles/mixins.scss';
 .root{
-    min-width: 230px;
-    .button{
-        width: 100%;
+    background-color: #fff;
+    padding: 20px 35px 5px 35px;
+    border-radius: 15px;
+    border: 1px solid #bac1ce;
+    .form{
+        min-width: 230px;
+        .button{
+            width: 100%;
+        }
     }
 }
